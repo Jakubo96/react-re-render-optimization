@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px;
+  padding: 30px;
+  border: black solid 2px;
+  height: 500px;
+
+  .children {
+    display: flex;
+
+    > * {
+      margin-right: 50px;
+    }
+
+    .input {
+      border: red solid 2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      label, input {
+        margin: 10px;
+      }
+
+      .exclamation {
+        padding: 5px;
+        border: green solid 2px;
+        margin: 10px;
+      }
+    }
+
+    .question {
+      padding: 5px;
+      border: blue solid 2px;
+      margin: 10px;
+    }
+  }
+}
